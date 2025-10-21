@@ -4,7 +4,7 @@
 
 Este projeto tem como objetivo construir um **chatbot técnico** que auxilia profissionais de manutenção hospitalar na **diagnóstico e resolução de falhas** em equipamentos médicos, utilizando **RAG (Retrieval-Augmented Generation)**.  
 
-Os alunos deverão:
+Vocês deverão:
 1. Criar uma **base de conhecimento** em formato `.json` com dados de manutenção;
 2. Implementar um **chatbot** que consulta a base;
 3. **Comparar dois modelos de linguagem** (ex.: *Falcon*, *LLaMA*, *Mistral*, *Gemma*, etc.);
@@ -71,7 +71,7 @@ project/ ├── kb/ │   ├── med_kb_example.json │   ├── sampl
 ```
 ---
 
-##📄 Exemplo de Consulta (sample_tickets.json)
+## 📄 Exemplo de Consulta (sample_tickets.json)
 ```json
 [
   {
@@ -278,7 +278,7 @@ Preferência geral
 
 🧠 Reflexão Final
 
-Os alunos devem responder:
+Vocês devem responder:
 
 1. O modelo mais rápido foi o mais confiável?
 
