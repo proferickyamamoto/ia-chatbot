@@ -68,11 +68,11 @@ project/ ├── kb/ │   ├── med_kb_example.json │   ├── sampl
   ]
 }
 
-
+```
 ---
 
-📄 Exemplo de Consulta (sample_tickets.json)
-
+##📄 Exemplo de Consulta (sample_tickets.json)
+```json
 [
   {
     "id": "TCK-001",
@@ -85,18 +85,18 @@ project/ ├── kb/ │   ├── med_kb_example.json │   ├── sampl
     "question": "Bateria descarregando rapidamente, o que devo fazer?"
   }
 ]
-
+```
 
 ---
 
-⚙️ Passo a Passo da Implementação
+## ⚙️ Passo a Passo da Implementação
 
 1️⃣ Instalar Dependências
-
+```python
 python -m venv .venv
 source .venv/bin/activate      # (Windows: .venv\Scripts\activate)
 pip install -U transformers sentence-transformers faiss-cpu pandas numpy scikit-learn torch
-
+```
 
 ---
 
@@ -105,7 +105,7 @@ pip install -U transformers sentence-transformers faiss-cpu pandas numpy scikit-
 > 📁 scripts/build_index.py
 
 
-
+```python
 import json, os, glob
 from sentence_transformers import SentenceTransformer
 import faiss, numpy as np
@@ -148,10 +148,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 Execute:
 
-python scripts/build_index.py
+> python scripts/build_index.py
 
 
 ---
@@ -161,7 +162,7 @@ python scripts/build_index.py
 > 📁 scripts/rag_chatbot.py
 
 
-
+```python 
 import json, numpy as np, faiss
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -203,7 +204,7 @@ if __name__ == "__main__":
     print(ctx)
     print("\n=== Resposta ===")
     print(answer)
-
+```
 
 ---
 
@@ -212,7 +213,7 @@ if __name__ == "__main__":
 > 📁 scripts/compare_models.py
 
 
-
+```python 
 import json, pandas as pd, time
 from rag_chatbot import retrieve, generate_answer
 
@@ -233,14 +234,14 @@ def run_eval(model_a, model_b):
 
 if __name__ == "__main__":
     run_eval("MODEL_A_NAME", "MODEL_B_NAME")
-
+```
 
 ---
 
 5️⃣ Executar os Testes
 
-python scripts/rag_chatbot.py
-python scripts/compare_models.py
+> python scripts/rag_chatbot.py
+> python scripts/compare_models.py
 
 
 ---
