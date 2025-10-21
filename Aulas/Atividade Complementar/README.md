@@ -23,8 +23,22 @@ Vocês deverão:
 
 ## 🧩 Estrutura do Projeto
 
-project/ ├── kb/ │   ├── med_kb_example.json │   ├── sample_tickets.json │ ├── scripts/ │   ├── build_index.py │   ├── rag_chatbot.py │   └── compare_models.py │ ├── results/ │   └── runs/ │ └── README.md
-
+```bash
+project/
+├── kb/
+│   ├── med_kb_example.json
+│   ├── sample_tickets.json
+│
+├── scripts/
+│   ├── build_index.py
+│   ├── rag_chatbot.py
+│   └── compare_models.py
+│
+├── results/
+│   └── runs/
+│
+└── README.md
+```
 ---
 
 ## 📁 Exemplo de Base de Conhecimento (`med_kb_example.json`)
@@ -246,33 +260,49 @@ if __name__ == "__main__":
 
 ---
 
-📊 Avaliação e Relatório
+## 5️⃣ Executar os Testes
 
-Cada grupo deverá produzir um relatório técnico (2–3 páginas) com:
+```bash
+python scripts/rag_chatbot.py
+python scripts/compare_models.py
+```
+Esses comandos rodam o chatbot com o modelo escolhido e depois comparam dois modelos diferentes, salvando os resultados em:
 
-Metodologia utilizada;
+> results/compare_results.csv
 
-Modelos comparados;
+---
 
-Exemplos de perguntas e respostas;
+## 📊 Avaliação e Relatório
 
-Análise de coerência, segurança e precisão;
+Cada grupo deverá produzir um relatório técnico (2–3 páginas) contendo:
 
-Casos de alucinação (respostas fora do contexto);
+- 🧩 Metodologia utilizada
 
-Tabela de comparação:
+- 🤖 Modelos comparados (ex.: Mistral vs Gemma)
+
+- 💬 Exemplos de perguntas e respostas
+
+- 🧠 Análise de coerência, segurança e precisão
+
+- 🚫 Casos de alucinação (respostas fora do contexto)
+
+---
+
+## 📈 Tabela de comparação dos resultados
+
+📋 Tabela de Comparação (preencher)
+
+Critério	| Modelo A |	Modelo B
+
+Exatidão técnica		| |
+Clareza		| |
+Segurança		| |
+Latência (s)		| |
+Alucinações		| |
+Preferência geral		| |
 
 
-Critério	Modelo A	Modelo B
-
-Exatidão técnica		
-Clareza		
-Segurança		
-Latência (s)		
-Alucinações		
-Preferência geral		
-
-
+> 💡 Dica: ao preencher, indiquem exemplos concretos de quando o modelo acertou ou alucinou — isso vale pontos na justificativa!
 
 ---
 
