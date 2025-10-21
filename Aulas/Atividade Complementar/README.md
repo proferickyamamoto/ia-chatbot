@@ -290,23 +290,22 @@ Cada grupo deverá produzir um relatório técnico (2–3 páginas) contendo:
 
 ## 📈 Tabela de comparação dos resultados
 
-📋 Tabela de Comparação (preencher)
+### 📊 Tabela de Comparação dos Resultados
 
-Critério	| Modelo A |	Modelo B
+| Critério              | Modelo A | Modelo B |
+|------------------------|-----------|-----------|
+| 🧠 Exatidão técnica     |           |           |
+| 💬 Clareza das respostas |           |           |
+| 🔒 Segurança nas instruções |           |           |
+| ⚡ Latência (segundos)  |           |           |
+| 🚫 Alucinações (fora do contexto) |           |           |
+| ⭐ Preferência geral (voto do grupo) |           |           |
 
-Exatidão técnica		| |
-Clareza		| |
-Segurança		| |
-Latência (s)		| |
-Alucinações		| |
-Preferência geral		| |
-
-
-> 💡 Dica: ao preencher, indiquem exemplos concretos de quando o modelo acertou ou alucinou — isso vale pontos na justificativa!
+> 💡 **Dica:** ao preencher, indiquem exemplos concretos de quando o modelo **acertou** ou **alucinou** — isso **vale pontos na justificativa**!
 
 ---
 
-🧠 Reflexão Final
+## 🧠 Reflexão Final
 
 Vocês devem responder:
 
